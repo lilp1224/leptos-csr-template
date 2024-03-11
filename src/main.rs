@@ -1,6 +1,6 @@
 use leptos::{logging, mount_to_body, view};
-// use {{crate_name}}::App;
-use project_name::App;
+use {{crate_name}}::App;
+// use project_name::App;
 
 fn main() {
 
