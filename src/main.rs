@@ -1,5 +1,5 @@
 use leptos::{logging, mount_to_body, view};
-use leptos_start_csr::App;
+use {{crate_name}}::App;
 
 fn main() {
 
