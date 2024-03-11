@@ -1,7 +1,7 @@
 use leptos::{component, view, IntoView, create_signal, SignalUpdate, SignalGet};
 use leptos_meta::{provide_meta_context, Link, Meta, Stylesheet, Title};
 use leptos_router::{Route, Router, Routes, A};
-use crate::pages::not_found::NotFound;
+use crate::pages::not_found::NotFoundPage;
 
 
 mod components;
@@ -28,7 +28,7 @@ pub fn App() -> impl IntoView {
             </nav>
         </div>
             <Routes>
-                <Route path="/*" view=  move || view! { <NotFound/> }/>
+                <Route path="/*" view=  move || view! { <NotFoundPage/> }/>
                 <Route path="/" view=  move || view! { <Home/> }/>
                 <Route path="/about" view=  move || view! { <About/> }/>
             </Routes>
