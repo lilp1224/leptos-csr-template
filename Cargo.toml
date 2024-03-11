@@ -1,0 +1,24 @@
+[package]
+name = "leptos_start_csr"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+leptos = { version = "0", features = ["csr", "serde"] }
+leptos_meta = { version = "0", features = ["csr"] }
+leptos_router = { version = "0", features = ["csr"] }
+
+log = "0"
+
+# dependencies for client (enable when csr or hydrate set)
+wasm-bindgen = { version = "0" }
+console_log = { version = "1" }
+console_error_panic_hook = { version = "0" }
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1
+panic = "abort"
