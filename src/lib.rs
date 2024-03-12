@@ -101,7 +101,7 @@ pub fn Home() -> impl IntoView {
                 on:click=move |_| home_button_on_click(count,set_count,state)
             >
                 "Something's here | "
-                {move || if count.get() == 0 {
+                {move || if count.get() == 1 {
                     "Click me!".to_string()
                 } else {
                     count.get().to_string()
