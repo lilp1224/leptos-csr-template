@@ -11,7 +11,7 @@ trunk serve
 ```
 
 ```shell
-trunk build --release
+trunk build --release --no-default-features
 ```
 
 
