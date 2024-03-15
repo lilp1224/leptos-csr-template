@@ -1,8 +1,8 @@
 use leptos::{mount_to_body, view};
 #[cfg(feature = "dev-tracing")]
-// use tracing::info;
+use tracing::info;
 use {{crate_name}}::App;
-use project_name::App;
+// use project_name::App;
 
 fn main() {
 
