@@ -4,6 +4,8 @@ cargo generate --git https://github.com/lilp1224/leptos-csr-template
 
 ```shell
 brew install trunk
+npm install -D tailwindcss
+npx tailwindcss init
 ```
 
 ```shell
