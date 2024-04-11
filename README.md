@@ -1,5 +1,5 @@
 ```shell
-cargo generate --git https://github.com/lilp1224/leptos-csr-template
+cargo generate --git https://github.com/noobmastercn/leptos-csr-template
 ```
 
 ```shell
